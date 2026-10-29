@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapido - India's Bike Taxi</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <a href="#" class="logo">rapido<span>.</span></a>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Our Services</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#book" class="nav-btn">Book a Ride</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="tagline">QUICK. SAFE. AFFORDABLE.</p>
+
+            <h1>Your ride,<br>
+                <span>your way.</span>
+            </h1>
+
+            <p class="description">
+                Beat the traffic and reach your destination faster
+                with affordable bike taxi rides.
+            </p>
+
+            <a href="#book" class="primary-btn">Book Your Ride →</a>
+
+            <div class="stats">
+                <div>
+                    <h3>Fast</h3>
+                    <p>Quick pickups</p>
+                </div>
+                <div>
+                    <h3>Easy</h3>
+                    <p>Simple booking</p>
+                </div>
+                <div>
+                    <h3>Smart</h3>
+                    <p>Affordable rides</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <div class="yellow-circle"></div>
+            <img
+                src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1000&q=85"
+                alt="Motorcycle on the road"
+            >
+            <div class="image-label">
+                <span class="dot"></span>
+                Your city. Your ride.
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking" id="book">
+        <div class="booking-heading">
+            <p class="tagline">LET'S GET MOVING</p>
+            <h2>Where do you want to go?</h2>
+            <p>Enter your pickup and destination details.</p>
+        </div>
+
+        <form class="booking-form"
+              onsubmit="event.preventDefault(); alert('Demo only! Connect a booking service to book real rides.');">
+
+            <div class="form-group">
+                <label for="pickup">Pickup location</label>
+                <input
+                    type="text"
+                    id="pickup"
+                    placeholder="Enter pickup location"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="destination">Drop location</label>
+                <input
+                    type="text"
+                    id="destination"
+                    placeholder="Enter destination"
+                    required
+                >
+            </div>
+
+            <button type="submit" class="primary-btn">
+                Find a Ride →
+            </button>
+        </form>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="section-heading">
+            <p class="tagline">TRAVEL YOUR WAY</p>
+            <h2>Our Services</h2>
+            <p>Choose the ride that fits your journey.</p>
+        </div>
+
+        <div class="service-grid">
+            <article class="service-card">
+                <div class="service-icon">🏍️</div>
+                <h3>Bike Taxi</h3>
+                <p>Zip through traffic and reach your destination quickly.</p>
+                <a href="#book">Book a bike →</a>
+            </article>
+
+            <article class="service-card">
+                <div class="service-icon">🛺</div>
+                <h3>Auto</h3>
+                <p>Enjoy convenient rides for your everyday travel.</p>
+                <a href="#book">Book an auto →</a>
+            </article>
+
+            <article class="service-card">
+                <div class="service-icon">🚕</div>
+                <h3>Cab</h3>
+                <p>Travel comfortably with a convenient city ride.</p>
+                <a href="#book">Book a cab →</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div>
+            <p class="tagline">ABOUT US</p>
+            <h2>Making every journey simpler.</h2>
+        </div>
+        <p>
+            We believe city travel should be simple, convenient and
+            accessible. This demo website showcases a modern ride-booking
+            experience inspired by bike taxi platforms.
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <a href="#home" class="logo">rapido<span>.</span></a>
+        <p>© 2026 Rapido-inspired demo website. Not the official Rapido site.</p>
+        <a href="mailto:hello@example.com">Contact Us</a>
+    </footer>
+
+</body>
+</html>
